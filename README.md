@@ -1,8 +1,14 @@
 # React Express Template
 
-Basic template for React in Express with Heroku support
+Basic template for React in Express with Heroku support.
+Works in development and production mode.
+Able to use any Express methods, such as `app.get` in React using `fetch`.
 
 # How to use
+
+Make sure you have [NodeJS](https://nodejs.org/en/download/), and [Git](https://git-scm.com/downloads) installed.
+
+This has been tested in Windows with PowerShell, but it should work for other systems and command interfaces.
 
 If you run into any problems, create a new issue for this repo and I will try to help.
 
@@ -18,7 +24,7 @@ npm run install-all
 
 ## Development
 
-Runs 2 server programs (Using concurrently):
+Runs 2 server programs (Using `concurrently`):
 
 - Client with React
 - Server with Express & Nodemon
@@ -40,20 +46,45 @@ npm run build
 npm run start
 ```
 
-## Heroku Setup
+## Production Setup
 
-1. Link your folder to a GitHub repository
-2. Go to https://dashboard.heroku.com and create an account if needed
-3. Press New > Create New App
-4. Choose a name and region, then click Create App
-5. In the navigation bar, click Deploy
-6. Select GitHub under Deployment Method
-7. Connect your GitHub account if needed
-8. Connect your repository by searching it
-9. Click Enable Automatic Deploys if you want it to restart everytime you push to the repo
-10. Deploy the app by by clicking Deploy Branch (Make sure `main` is selected)
-11. When the build finishes, you should be able to view your app under `http://{your app name}.herokuapp.com`
-12. To view the logs, go to the heroku app page and click More (Top right) > View logs
+### GitHub
+
+Skip to [Heroku](#heroku) Setup if you already know how to link GitHub repository
+
+1. Go to https://github.com and create an account if needed
+2. Press the plus button (Top right) > `New repository`
+3. Choose a name and description, then click `Create repository`
+4. Go back to your project folder (On your computer)
+5. Delete the `.git` folder. It should be hidden, so make sure hidden folders are visible
+6. Open a terminal in your folder, paste the below code in (Replace `{username}` and `{repo}` with your GitHub username and repository name):
+
+```powershell
+git remote remove origin # Remove connection to template repo
+
+git remote add origin https://github.com/{username}/{repo} # Add connection to your own repo
+
+git stage . # 'Stage' all files (Get them ready to commit)
+
+git commit -m "Created project" # Create a commit with a message
+
+git push -u origin main # Push (send) all files in the commit to the online repo
+```
+
+### Heroku
+
+1. Go to `https://dashboard.heroku.com` and create an account if needed
+2. Press `New` > `Create new app`
+3. Choose a unique name, then click `Create app`
+4. In the navigation bar, click `Deploy`
+5. Select `GitHub` under `Deployment Method`
+6. Connect your GitHub account if needed
+7. Connect your repository by searching it
+8. Click `Enable Automatic Deploys` if you want it to restart everytime you push to the repo
+9. Deploy the app by by clicking `Deploy Branch` (Make sure `main` is selected in the dropdown)
+10. When the build finishes, you should be able to view your app under `http://{app}.herokuapp.com` (Replace `{app}` with the name of your app)
+11. To view the logs, go to the Heroku app page and click `More` (Top right) > `View logs`
+12. If the app is successful, you should see `State changed from starting to up` with no errors after
 
 ## Modules & Frameworks
 
