@@ -15,7 +15,7 @@ If you run into any problems, create a new issue for this repo and I will try to
 ## Installation
 
 ```powershell
-# Clone repository into ./trustworthytimes folder
+# Clone repository into ./react-express-template folder
 git clone https://github.com/darccyy/react-express-template.git
 
 # Install dependencies
