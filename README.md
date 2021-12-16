@@ -60,15 +60,20 @@ Skip to [Heroku](#heroku) Setup if you already know how to link GitHub repositor
 6. Open a terminal in your folder, paste the below code in (Replace `{username}` and `{repo}` with your GitHub username and repository name):
 
 ```powershell
-git remote remove origin # Remove connection to template repo
+# Remove connection to template repo
+git remote remove origin
 
-git remote add origin https://github.com/{username}/{repo} # Add connection to your own repo
+# Add connection to your own repo
+git remote add origin https://github.com/{username}/{repo}
 
-git stage . # 'Stage' all files (Get them ready to commit)
+# 'Stage' all files (Get them ready to commit)
+git stage .
 
-git commit -m "Created project" # Create a commit with a message
+# Create a commit with a message
+git commit -m "Created project"
 
-git push -u origin main # Push (send) all files in the commit to the online repo
+# Push (send) all files in the commit to the online repo
+git push -u origin main
 ```
 
 ### Heroku
@@ -104,6 +109,7 @@ By default, this package uses these frameworks, languages, and modules
 
 ### Optional Hosting
 
+- Git
 - GitHub
 - Heroku
 
@@ -118,7 +124,7 @@ By default, this package uses these frameworks, languages, and modules
 
 Simplified file tree
 
-```py
+```powershell
 ./ # Root folder (react-express-template)
 │
 ├── server/ # All server files
