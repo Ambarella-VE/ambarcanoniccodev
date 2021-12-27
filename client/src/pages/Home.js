@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import "../css/Home.min.css";
+import "../scss/Home.scss";
 
 import Message from "../js/Message";
 

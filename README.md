@@ -148,7 +148,5 @@ Simplified file tree
         ├── scss/ # Styles in scss
         │   └── ... # Corresponding to js folder
         │
-        ├── css/ # Compiled and minified from scss
-        │
         └── font/... # Any fonts (Empty by default)
 ```

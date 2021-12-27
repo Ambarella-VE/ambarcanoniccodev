@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import "../css/Error404.min.css";
+import "../scss/Error404.scss";
 
 class Error404 extends Component {
   render() {

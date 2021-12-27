@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import "../css/Message.min.css"
+import "../scss/Message.scss"
 
 class Message extends Component {
   // Initialize state variable
