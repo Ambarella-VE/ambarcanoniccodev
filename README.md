@@ -8,7 +8,7 @@ Able to use any Express methods, such as `app.get` in React using `fetch`.
 
 Make sure you have [NodeJS](https://nodejs.org/en/download/), and [Git](https://git-scm.com/downloads) installed.
 
-This has been tested in Windows with PowerShell, but it should work for other systems and command interfaces.
+This has been tested in Windows 10 with PowerShell, but it should work for other systems and command interfaces.
 
 If you run into any problems, create a new issue for this repo and I will try to help.
 
@@ -35,6 +35,16 @@ Corresponding server soft restarts when file is saved.
 # Start development server
 npm run start:dev
 ```
+
+### Concurrently
+
+The module concurrently, used only for the development environment, might require global installation with this command:
+
+```powershell
+npm install concurrently -g
+```
+
+If faced with an error when running, try in Command Prompt with the `cmd` command.
 
 ## Production
 
