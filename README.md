@@ -19,7 +19,7 @@ If you run into any problems, create a new issue for this repo and I will try to
 git clone https://github.com/darccyy/react-express-template.git
 
 # Install dependencies
-npm run install-all
+npm run install
 ```
 
 ## Development
