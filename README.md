@@ -33,7 +33,7 @@ Corresponding server soft restarts when file is saved.
 
 ```powershell
 # Start development server
-npm run start:dev
+npm run dev
 ```
 
 ### Concurrently
