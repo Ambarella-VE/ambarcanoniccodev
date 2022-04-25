@@ -17,7 +17,7 @@ const router = express.Router();
 
 // Api test message
 router.get("/api/test", (req, res) => {
-  res.json({ message: "This was sent from server. ❤" });
+  res.json({ msg: "This was sent from server. ❤" });
 });
 
 // Use router

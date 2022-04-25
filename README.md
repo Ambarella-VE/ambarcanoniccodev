@@ -146,17 +146,8 @@ Simplified file tree
     │   └── image/... # Images, obviously
     │
     └── src/ # Dynamic React files
-        ├── index.js # Main React file
+        ├── index.js # Initial React file for setup
         │
-        ├── pages/ # Basically the urls
-        │   ├── ... # Home, Contact, Error404
-        │   └── Layout.js # Main file for layout: Header, Contact link, ect.
-        │
-        ├── js/ # React js files for components
-        │   └── ... # Components that would get reused
-        │
-        ├── scss/ # Styles in scss
-        │   └── ... # Corresponding to js folder
-        │
-        └── font/... # Any fonts (Empty by default)
+        ├───── App.js # Main file for content
+        └───── App.scss # Main styles
 ```
