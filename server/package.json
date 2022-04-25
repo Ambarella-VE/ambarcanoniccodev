@@ -2,7 +2,6 @@
   "name": "react-express-template-server",
   "version": "1.0.0",
   "private": true,
-  "description": "Server for React Express Template",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.3",
