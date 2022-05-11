@@ -3,11 +3,10 @@
   "version": "1.1.0",
   "description": "Basic template for React in Express with Heroku support",
   "main": "server/server.js",
+  "author": "",
+  "license": "MIT",
   "engines": {
     "node": "16.13.0"
-  },
-  "dependencies": {
-    "concurrently": "^6.4.0"
   },
   "scripts": {
     "build": "npm run install && cd client && npm run build",
@@ -15,7 +14,7 @@
     "start": "cd server && npm run start",
     "dev": "concurrently \"cd client && npm run start\" \"cd server && npm run dev\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "devDependencies": {
+    "concurrently": "^6.4.0"
+  }
 }
