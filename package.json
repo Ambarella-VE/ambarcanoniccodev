@@ -1,9 +1,9 @@
 {
-  "name": "react-express-template",
+  "name": "ambar-canonicco-dev-full-stack",
   "version": "1.1.0",
-  "description": "Basic template for React in Express with Heroku support",
+  "description": "Repository for Ambar Canonicco Dev Full Stack",
   "main": "server/server.js",
-  "author": "",
+  "author": "Ambar Canonicco",
   "license": "MIT",
   "engines": {
     "node": "16.13.0"

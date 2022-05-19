@@ -3,6 +3,9 @@ const path = require("path");
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const emoji = require("node-emoji");
+
+const port = process.env.PORT || 8080;
 
 // Use body parser
 app.use(bodyParser.json());
@@ -15,11 +18,6 @@ app.use(staticFiles);
 // Start router
 const router = express.Router();
 
-// Api test message
-router.get("/api/test", (req, res) => {
-  res.json({ msg: "This was sent from server. ❤" });
-});
-
 // Use router
 app.use(router);
 
@@ -27,7 +25,7 @@ app.use(router);
 app.use("/*", staticFiles);
 
 // Start server
-app.set("port", process.env.PORT || 3001);
+app.set("port", port);
 app.listen(app.get("port"), () => {
-  console.log(`Listening on ${app.get("port")}`);
+  console.log(`${emoji.get('earth-americas')}Server Listening on port ${app.get("port")}`);
 });
